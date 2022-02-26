@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>QUIZ</title>
+  </head>
+  <body>
+    <div>
+      <h1>CODE QUIZ</h1>
+      <h1>Answer the questions below before the timer runs out. Answer the question wrong, time decrease. Answer correctly time increases. Fail to answer the questions in time you fail. </h1>
+    </div>  
+    <body>
+      <div>
+          <div class="result">
+          </div>
+          <div id="question">
+          </div>
+          <div class="option-container">
+              <button class="button2 " onclick="" id="option1"></button>
+              <button class="button2" id="option2"></button>
+              <button class="button2" id="option3"></button>
+              <button class="button2" id="option4"></button>
+          </div>
+          <div class="navigation">
+              <button class="submit" id="button2"  onclick = disabled/>Submit</button>
+              <button class="next" id="button1" onclick="enableButton2()"> Next</button><br>
+      
+          </div>
+      </div>
+      <div id="countdown"></div>
+
+      <div class="card">
+        <p>Enter your name to view grade</p>
+        <form>
+          <ul>
+            <li>
+
+              <label for="msg">Name</label>
+
+              <input id="msg" name="comments"></input>
+
+            </li>
+          </ul>
+          <button id="save">SAVE</button>
+        </form>   
+      </div>
+  
+      <div class="card">
+        <p>Name and Score</p>
+        
+        <p style = "color: #F2059F;" >Name: <span style = "color: white;" id="saved-comment"></span></p>
+
+        <p id= "score">Score:</p>
+      </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
