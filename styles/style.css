@@ -87,3 +87,6 @@ button:hover{
   
 }
 
+#next-button{
+  display: none;
+}
