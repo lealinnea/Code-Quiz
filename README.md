@@ -10,7 +10,7 @@ create a working code game that filters through questions and decreases time whe
 ## Links
 
 https://lealinnea.github.io/Code-Quiz/
-
+https://github.com/lealinnea/Code-Quiz
 
 ## Created by:
 Lea Guerrero
