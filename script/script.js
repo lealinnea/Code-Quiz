@@ -91,7 +91,7 @@ function iterate(id) {
       nextQuestion();
     } 
     else {
-      timeleft -= 5;
+      timeleft -= 5; 
       numIncorrect++;
       questionAnswered = true;
       nextQuestion();
