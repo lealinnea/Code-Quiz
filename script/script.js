@@ -1,7 +1,8 @@
-
+var timeleft = 20;
 var numCorrect = 0;
 var numIncorrect = 0;
 var questionAnswered = false;
+
 
 var Questions = [{
   id: 0,
@@ -91,7 +92,7 @@ function iterate(id) {
 
     } else {
       numIncorrect++;
-      // timeLeft -= 5;
+      timeleft -= 5;
       questionAnswered = true;
       nextQuestion();
       hideShow();
@@ -133,8 +134,8 @@ function nextQuestion() {
 }
 
 //timer
+
 document.getElementById("gameStart").addEventListener("click", function(){
-var timeleft = 20;
 var cdTimer = setInterval(function () {
   if (timeleft <= 0) {
     clearInterval(cdTimer); 
