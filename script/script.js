@@ -89,10 +89,10 @@ function iterate(id) {
       questionAnswered = true;
       hideShow();
       nextQuestion();
-
-    } else {
-      numIncorrect++;
+    } 
+    else {
       timeleft -= 5;
+      numIncorrect++;
       questionAnswered = true;
       nextQuestion();
       hideShow();
@@ -148,7 +148,6 @@ var cdTimer = setInterval(function () {
   } 
   else {
     document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
-
   }
   timeleft -= 1;
 }, 1000);
