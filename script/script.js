@@ -137,6 +137,7 @@ function nextQuestion() {
 
 document.getElementById("gameStart").addEventListener("click", function(){
 var cdTimer = setInterval(function () {
+  document.getElementById('hide').style.display = "inline";
   if (timeleft <= 0) {
     clearInterval(cdTimer); 
     document.getElementById("countdown").innerHTML = "OUT OF TIME";
