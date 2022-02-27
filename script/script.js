@@ -135,6 +135,7 @@ function nextQuestion() {
 
 
 //timer
+document.getElementById("gameStart").addEventListener("click", function(){
 var timeleft = 20;
 var cdTimer = setInterval(function () {
   if (timeleft <= 0) {
@@ -152,7 +153,7 @@ var cdTimer = setInterval(function () {
   timeleft -= 1;
 }, 1000);
 
-
+});
 
 //submit name
 
