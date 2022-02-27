@@ -90,13 +90,13 @@ function iterate(id) {
       nextQuestion();
 
     } else {
-      timeleft -= 5;
       numIncorrect++;
+      // timeLeft -= 5;
       questionAnswered = true;
       nextQuestion();
       hideShow();
     }
-
+   
   })
 }
 
@@ -132,21 +132,20 @@ function nextQuestion() {
   }
 }
 
-
-
 //timer
 document.getElementById("gameStart").addEventListener("click", function(){
 var timeleft = 20;
 var cdTimer = setInterval(function () {
   if (timeleft <= 0) {
-    clearInterval(cdTimer);
+    clearInterval(cdTimer); 
     document.getElementById("countdown").innerHTML = "OUT OF TIME";
     //score
     document.getElementById("score").innerHTML = "You got " + numCorrect + " CORRECT and " + numIncorrect + " INCORRECT!";
     document.getElementById("score").style.display = "none";
     console.log(numIncorrect);
     console.log(numCorrect);
-  } else {
+  } 
+  else {
     document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
 
   }
